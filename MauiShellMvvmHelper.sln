@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C90C55D0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiShellMvvmHelper.Tests", "tests\MauiShellMvvmHelper.Tests\MauiShellMvvmHelper.Tests.csproj", "{AE66B1CF-BE5F-49C5-BBE7-9870608246C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{4C596ABF-4694-427C-96AD-A505EF306427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiShellSample", "samples\MauiShellSample\MauiShellSample.csproj", "{4DE4F4E4-8402-49D6-A64E-93805959EA5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,12 @@ Global
 		{AE66B1CF-BE5F-49C5-BBE7-9870608246C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE66B1CF-BE5F-49C5-BBE7-9870608246C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE66B1CF-BE5F-49C5-BBE7-9870608246C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3ED8973F-3B0F-49D0-B897-8E6713CD62A8} = {D5300543-14F0-480F-9C31-6DFF200A95FD}
 		{AE66B1CF-BE5F-49C5-BBE7-9870608246C3} = {C90C55D0-DFCB-4388-A046-968197FC9252}
+		{4DE4F4E4-8402-49D6-A64E-93805959EA5A} = {4C596ABF-4694-427C-96AD-A505EF306427}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C3E02AA-9EE4-402F-91E9-42A183B212C3}
