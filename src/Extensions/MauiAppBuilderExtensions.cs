@@ -51,4 +51,4 @@ namespace MauiShellMvvmHelper.Extensions;
             }, serviceLifetime));
             return mauiAppBuilder;
         }
-    }
+}
