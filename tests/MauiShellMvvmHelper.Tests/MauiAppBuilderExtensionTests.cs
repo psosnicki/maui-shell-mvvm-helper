@@ -11,7 +11,7 @@ namespace MauiShellMvvmHelper.Tests;
 
 public class MauiAppBuilderExtensionTests
 {
-    private MauiAppBuilder _mauiAppBuilder;
+    private readonly MauiAppBuilder _mauiAppBuilder;
 
     public MauiAppBuilderExtensionTests()
     {
@@ -28,8 +28,8 @@ public class MauiAppBuilderExtensionTests
         _mauiAppBuilder.RegisterView<TestView,TestViewModel>();
         var mauiApp = _mauiAppBuilder.Build();
         var view = mauiApp.Services.GetRequiredService<TestView>();
-        view.ShouldNotBeNull();
-        view.BindingContext
+        view.ShouldNotBeNull()
+            .BindingContext
             .ShouldNotBeNull()
             .ShouldBeOfType<TestViewModel>();
     }
@@ -40,8 +40,8 @@ public class MauiAppBuilderExtensionTests
         _mauiAppBuilder.RegisterView<AttributeView>();
         var mauiApp = _mauiAppBuilder.Build();
         var view = mauiApp.Services.GetRequiredService<AttributeView>();
-        view.ShouldNotBeNull();
-        view.BindingContext
+        view.ShouldNotBeNull()
+            .BindingContext
             .ShouldNotBeNull()
             .ShouldBeOfType<TestViewModel>();
     }
