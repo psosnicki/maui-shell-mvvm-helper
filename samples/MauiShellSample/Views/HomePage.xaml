@@ -4,9 +4,9 @@
              x:Class="MauiShellMvvmExample.HomePage"
              Title="HomePage"
              BackgroundColor="White">
-    <StackLayout>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
         <Label Text="Shell home page" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
-        <Label Text="{Binding Test, Mode=TwoWay}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-        <Button Text="View example" WidthRequest="200" HorizontalOptions="Center" Command="{Binding ChangeMessageCmd}"></Button>
+        <Label Text="{Binding Test}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+        <Button Text="Open details view" WidthRequest="200" HorizontalOptions="Center" Command="{Binding ChangeMessageCmd}"></Button>
     </StackLayout>
 </ContentPage>

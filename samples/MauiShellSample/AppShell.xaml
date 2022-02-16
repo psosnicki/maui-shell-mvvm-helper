@@ -5,7 +5,6 @@
              x:Class="MauiShellMvvmExample.AppShell">
 
     <Shell.Resources>
-        
     </Shell.Resources>
     
     <FlyoutItem Title="Home">
@@ -15,5 +14,4 @@
     <FlyoutItem Title="About">
         <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"></ShellContent>
     </FlyoutItem>
-    
 </Shell>

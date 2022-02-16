@@ -4,9 +4,9 @@
              x:Class="MauiShellMvvmExample.AboutPage"
              Title="AboutPage"
              BackgroundColor="White">
-    <StackLayout>
-        <Label Text="This is example of MAUI app shell + auto view model binding"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="CenterAndExpand" 
+                 HorizontalOptions="CenterAndExpand">
+        <Label Text="Example of MAUI app shell view model registration and binding"/>
+        <Label Text="{Binding Title}"/>
     </StackLayout>
 </ContentPage>

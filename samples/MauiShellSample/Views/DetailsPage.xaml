@@ -6,9 +6,9 @@
              xmlns:mvvm="clr-namespace:MauiShellMvvmHelper.Base;assembly=MauiShellMvvmHelper"
              Title="DetailsPage"
              BackgroundColor="White">
-    <StackLayout>
-        <Label Text="This is details page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="CenterAndExpand" 
+                 HorizontalOptions="CenterAndExpand" >
+        <Label Text="details page"/>
+        <Label Text="{Binding Title}"/>
     </StackLayout>
 </mvvm:View>

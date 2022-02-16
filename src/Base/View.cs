@@ -2,12 +2,12 @@
 
 namespace MauiShellMvvmHelper.Base;
 
-public class View<T> : ContentPage where T : class
+public class View<TViewModel> : ContentPage where TViewModel: class
 {
-    public T Context { get; private set; }
-    public View() : base()
+    public TViewModel Context { get; private set; }
+    public View()
     {
-        var viewModel = DependencyResolver.Get<T>();
+        var viewModel = DependencyResolver.Get<TViewModel>();
         Context = viewModel;
         BindingContext = viewModel;
     }

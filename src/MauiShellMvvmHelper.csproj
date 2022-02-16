@@ -12,12 +12,25 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+		<Authors>Piotr Sośnicki</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>Simplifies view - viewmodel registration &amp; binding in .NET MAUI Shell App</Description>
+		<PackageTags>Maui;Shell;Mvvm;Helper</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\" />
 	  <Folder Include="Platforms\iOS\" />
 	  <Folder Include="Platforms\Windows\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
