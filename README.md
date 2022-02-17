@@ -2,73 +2,64 @@
 
 Simplifies view - viewmodel registration & binding in .NET MAUI Shell App
 
-# How to
+# Usage
 
-### Register & bind view - viewmodel in three ways (all examples in samples folder)
+You can register & bind view - viewmodel in three ways (all examples in samples folder)
 
-</br>
-
-### **1) register view and view model directly**
+ **1) register view and view model directly**
 </br>
 
 *MauiProgram.cs*
 
-
-
 ```
-public static MauiApp CreateMauiApp(){
-
+public static MauiApp CreateMauiApp()
+{
     var builder = new MauiApp.CreateBuilder();
     ...
     builder.RegisterView<HomePageView, HomeViewModel>();
     ...
     return builder.Build()
 }
-
-
 ```
-</br>
 
-### **2) or register view and use ViewModel attribute**
+**2) or register view and use ViewModel attribute**
 </br>
 
 *MauiProgram.cs*
 
 ```
-public static MauiApp CreateMauiApp(){
-
+public static MauiApp CreateMauiApp()
+{
     var builder = new MauiApp.CreateBuilder();
     ...
     builder.RegisterView<HomePageView>();
     ...
-    return builder.Build()
+    return builder.Build();
 }
-
 ```
 *HomePageView.cs*
 
 ```
 [ViewModel(typeof(HomeViewModel))]
-public class HomePageView : ContentPage{
+public class HomePageView : ContentPage
+{
     ...
 }
 ```
-</br>
 
-### **3) or use base view**
-
+**3) or use base view**
 </br>
 
 *MauiProgram.cs*
 ```
 public static MauiApp CreateMauiApp()
 {
-		var builder = MauiApp.CreateBuilder();
-        ...
-        builder.Services.AddTransient<DetailsPage>();
-		builder.Services.AddTransient<DetailsViewModel>();
-
-        return builder.Build().UseMvvm();
+    var builder = MauiApp.CreateBuilder();
+    ...
+    builder.Services.AddTransient<DetailsPage>();
+    builder.Services.AddTransient<DetailsViewModel>();
+    ...
+    return builder.Build().UseMvvm();
 }
 ```
 *DetailsPage.xaml.cs*
@@ -76,9 +67,9 @@ public static MauiApp CreateMauiApp()
 public partial class DetailsPage : View<DetailsViewModel>
 {
     public DetailsPage()
-	{
-		InitializeComponent();
-	}
+    {
+        InitializeComponent();
+    }
 }
 ```
 *DetailsPage.xaml*
@@ -88,6 +79,6 @@ public partial class DetailsPage : View<DetailsViewModel>
              x:Class="MauiShellMvvmExample.DetailsPage"
              xmlns:local="clr-namespace:MauiShellMvvmExample.ViewModels"
              xmlns:mvvm="clr-namespace:MauiShellMvvmHelper.Base;assembly=MauiShellMvvmHelper">
-    ...
+        ...
 </mvvm:View>
 ```
