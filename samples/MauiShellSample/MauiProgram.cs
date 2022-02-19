@@ -15,7 +15,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			});
 
-		builder.RegisterView<HomePage, HomeViewModel>();
+		builder.Register<HomePage, HomeViewModel>();
 		builder.RegisterView<AboutPage>();
 
 		builder.Services.AddTransient<DetailsPage>();

@@ -25,7 +25,7 @@ public class MauiAppBuilderExtensionTests
     [Fact]
     public void Should_Register_And_Bind_View_Model()
     {
-        _mauiAppBuilder.RegisterView<TestView,TestViewModel>();
+        _mauiAppBuilder.Register<TestView,TestViewModel>();
         var mauiApp = _mauiAppBuilder.Build();
         var view = mauiApp.Services.GetRequiredService<TestView>();
         view.ShouldNotBeNull()

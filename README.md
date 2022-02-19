@@ -16,7 +16,7 @@ public static MauiApp CreateMauiApp()
 {
     var builder = new MauiApp.CreateBuilder();
     ...
-    builder.RegisterView<HomePageView, HomeViewModel>();
+    builder.Register<HomePageView, HomeViewModel>();
     ...
     return builder.Build()
 }

@@ -39,7 +39,7 @@ namespace MauiShellMvvmHelper.Extensions;
         /// <param name="mauiAppBuilder">MauiAppBuilder</param>
         /// <param name="serviceLifetime">Service lifetime</param>
         /// <returns>MauiAppBuilder</returns>
-        public static MauiAppBuilder RegisterView<TView, KViewModel>
+        public static MauiAppBuilder Register<TView, KViewModel>
             (this MauiAppBuilder mauiAppBuilder, ServiceLifetime serviceLifetime = ServiceLifetime.Transient) where TView : BindableObject, new()
         {
             mauiAppBuilder.Services.Add(new ServiceDescriptor(typeof(KViewModel),typeof(KViewModel), serviceLifetime));
