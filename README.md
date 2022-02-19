@@ -1,5 +1,7 @@
 # MauiShellMvvmHelper 
 
+![build](https://github.com/psosnicki/maui-shell-mvvm-helper/actions/workflows/build.yml/badge.svg) ![tests](https://github.com/psosnicki/maui-shell-mvvm-helper/actions/workflows/tests.yml/badge.svg)
+
 Simplifies view - viewmodel registration & binding in .NET MAUI Shell App
 
 # Usage
